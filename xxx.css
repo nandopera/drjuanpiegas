@@ -43,6 +43,10 @@ section {
   background: #002D66;
 }
 
+#p5 {
+  left: 0;
+}
+
 ul {
  position: fixed; 
  z-index: 1;
@@ -60,15 +64,21 @@ ul {
     transform: translateX(-290%);
 }
 
+#t5:target .page#p5 {
+  transform: translateX(0);
+}
+
 #t2:target .page#p1, 
 #t3:target .page#p1,
-#t4:target .page#p1 {
+#t4:target .page#p1,
+#t5:target .page#p1 {
   background: black;
 }
 
 #t2:target .page#p1 .icon, 
 #t3:target .page#p1 .icon,
-#t4:target .page#p1 .icon {
+#t4:target .page#p1 .icon,
+#t5:target .page#p1 .icon {
   -webkit-filter: blur(3px);
   filter: blur(3px);
 }
@@ -89,7 +99,8 @@ ul .icon:hover {
 
 #t2:target ul .icon,
 #t3:target ul .icon,
-#t4:target ul .icon {
+#t4:target ul .icon,
+#t5:target ul .icon {
   transform: scale(.6); 
   transition-delay: .25s;
 }
@@ -103,6 +114,10 @@ ul .icon:hover {
 }
 
 #t4:target #cuatro {
+  transform: scale(1.2) !important;
+}
+
+#t5:target #cinco {
   transform: scale(1.2) !important;
 }
 
@@ -184,6 +199,11 @@ a {
 }
 
 #t4:target .page#p4 .icon {
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+#t5:target .page#p5 .icon {
   transform: translateX(0) !important;
   transition-delay: 1s;
 }
