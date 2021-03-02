@@ -44,7 +44,9 @@ section {
 }
 
 #p5 {
-  left: 0;
+  position: relative;
+  left: 500px;
+  background:transparent;
 }
 
 ul {
@@ -163,6 +165,10 @@ a {
 
 .hint a:hover {
   color: rgb(12, 110, 33);
+}
+
+#formdr div label {
+  font-size: 16px;
 }
 
 .page .icon {
